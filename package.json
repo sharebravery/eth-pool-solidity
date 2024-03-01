@@ -8,6 +8,7 @@
     "build": "npx hardhat compile & pnpm run gen:docs",
     "deploy": "pnpm run build && npx hardhat run scripts/deploy.ts --network hardhat",
     "deploy:sepolia": "pnpm run build && npx hardhat run scripts/deploy.ts --network sepolia",
+    "verify": "npx hardhat verify --network sepolia 0x4E546abd6E6e8e77f5202cFcd59Cf8dd6cE59B84",
     "test": "npx hardhat test",
     "gen:docs": "npx hardhat docgen",
     "console": "npx hardhat console --network hardhat",

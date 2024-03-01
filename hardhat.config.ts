@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "@nomicfoundation/hardhat-verify";
 import 'solidity-docgen';
 
 const config: HardhatUserConfig = {
@@ -24,9 +25,19 @@ const config: HardhatUserConfig = {
     // },
     sepolia: {
       url: "https://polygon-mumbai.g.alchemy.com/v2/k_wjgD_vDNows-mCiUJ_ikKh-0Gd2c0C",
-      accounts: []
+      accounts: ['']
     }
   },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://etherscan.io/
+    apiKey: ""
+  },
+  // sourcify: {
+  //   // Disabled by default
+  //   // Doesn't need an API key
+  //   enabled: true
+  // }
 };
 
 export default {
