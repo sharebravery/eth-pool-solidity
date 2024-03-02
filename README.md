@@ -77,7 +77,7 @@ constructor() public
 function deposit() external payable
 ```
 
-存款
+Deposit
 
 ### withdraw
 
@@ -85,13 +85,13 @@ function deposit() external payable
 function withdraw(uint256 amount) external
 ```
 
-提款
+Withdraw
 
 #### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| amount | uint256 | 数额 |
+| amount | uint256 | Amount |
 
 ### addReward
 
@@ -99,5 +99,5 @@ function withdraw(uint256 amount) external
 function addReward() external payable
 ```
 
-添加奖励函数，仅合约所有者调用
+Add reward function, only callable by contract owner
 
